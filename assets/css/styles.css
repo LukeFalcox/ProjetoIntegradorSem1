@@ -2,11 +2,11 @@
 
 :root {
   --color-primary-1: #fff9ea;
-  --color-primary-2: #ffe8b4;
-  --color-primary-3: #ffe100;
-  --color-primary-4: #ffcb45;
-  --color-primary-5: #f8d477;
-  --color-primary-6: #e9a209;
+  --color-primary-2: #b4fff4;
+  --color-primary-3: #00f2ff;
+  --color-primary-4: #45e9ff;
+  --color-primary-5: #77c0f8;
+  --color-primary-6: #0949e9;
 
   --color-neutral-0: #fff;
   --color-neutral-1: #1d1d1d;
@@ -95,7 +95,7 @@ header {
 
 #nav_logo {
   font-size: 24px;
-  color: #fcac00;
+  color: #0061fc;
 }
 
 #nav_list {
