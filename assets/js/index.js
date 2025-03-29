@@ -11,6 +11,8 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// ================
+
 var json = {
   watts: "0",
   horas: "0",

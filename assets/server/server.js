@@ -1,21 +1,37 @@
 const WebSocket = require("ws");
-const server = new WebSocket.Server({ port: 8080 });
+const server = new WebSocket.Server({
+  port: 8000,
+});
 
-server.on("connection", (ws) => {
-  console.log("Cliente conectado!");
+/*
+  Informações energia
+  watts: "0",
+  horas: "0",
+  wh: "0",
+  kwh: "0",
+*/
 
-  // Função simulada de leitura de hardware
-  function lerHardware() {
-    return { timestamp: new Date().toISOString(), sensor: Math.random() };
-  }
+let sockets = [];
+server.on("connection", function (socket) {
+  sockets.push(socket);
 
-  const intervalo = setInterval(() => {
-    const dados = lerHardware();
-    ws.send(JSON.stringify(dados));
-  }, 2000);
+  socket.on("message", function (msg) {
+    sockets.forEach((s) => s.send(msg));
+  });
 
-  ws.on("close", () => {
-    clearInterval(intervalo);
-    console.log("Cliente desconectado");
+  socket.on("close", function () {
+    sockets = sockets.filter((s) => s !== socket);
   });
 });
+
+let clients = [
+  new WebSocket("ws://localhost:8080"),
+  new WebSocket("ws://localhost:8080"),
+];
+clients.map((client) => {
+  client.on("message", (msg) => console.log(msg));
+});
+// Esperamos o cliente conectar com o servidor usando async/await
+await new Promise((resolve) => clients[0].once("open", resolve));
+// Imprimi "Hello!" duas vezes, um para cada cliente
+clients[0].send("Hello!");
