@@ -10,3 +10,14 @@ document.addEventListener("DOMContentLoaded", function () {
     icon.classList.toggle("fa-times");
   });
 });
+
+var json = {
+  watts: "0",
+  horas: "0",
+  wh: "0",
+  kwh: "0",
+};
+document.getElementById("textwatts").innerHTML = json.watts;
+document.getElementById("texthoras").innerHTML = json.horas;
+document.getElementById("textwh").innerHTML = json.wh;
+document.getElementById("textkwh").innerHTML = json.kwh;
