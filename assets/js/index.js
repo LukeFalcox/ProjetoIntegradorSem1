@@ -23,3 +23,9 @@ document.getElementById("textwatts").innerHTML = json.watts;
 document.getElementById("texthoras").innerHTML = json.horas;
 document.getElementById("textwh").innerHTML = json.wh;
 document.getElementById("textkwh").innerHTML = json.kwh;
+
+
+  window.onload = function() {
+    alert("Bem-vindo ao meu site!");
+  };
+
