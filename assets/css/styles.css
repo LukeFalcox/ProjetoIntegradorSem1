@@ -428,6 +428,39 @@ header {
     flex-direction: column;
   }
 }
+/*Sobre Nos*/
+#aboutus {
+  min-height: calc(100vh - 91px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+}
+
+#aboutus_content {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#aboutus_content p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.1rem; /* tamanho da fonte ajustável */
+  line-height: 1.8; /* altura entre as linhas para melhor leitura */
+  margin-top: 24px; /* espaçamento entre os parágrafos */
+  align-items: stretch;
+  text-align: initial;
+}
+#aboutus_content p:nth-of-type(odd) {
+  text-align: left;
+}
+
+#aboutus_content p:nth-of-type(even) {
+  text-align: right;
+}
+
 /*FOOTER*/
 footer {
   background-color: var(--color-primary-2);
