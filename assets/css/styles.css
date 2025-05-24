@@ -318,6 +318,8 @@ header {
   gap: 20px;
 }
 
+
+
 @media screen and (max-width: 1170px) {
   #dishes {
     flex-wrap: wrap;
