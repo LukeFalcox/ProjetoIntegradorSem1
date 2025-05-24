@@ -153,6 +153,7 @@ header {
     list-style: none;
     text-align: center;
   }
+
 }
 
 /*HOME*/
@@ -395,6 +396,38 @@ header {
 .feedback-content p span {
   color: var(--color-primary-6);
 }
+
+#feedbacks {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .feedback {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .feedback-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+
+  .feedback-content p {
+    margin: 5px 0;
+  }
+
+  .fa-star {
+    color: gold;
+  }
 
 @media screen and (max-width: 1170px) {
   #testimonials {
