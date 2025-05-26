@@ -541,12 +541,12 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;   
-  height: 600px;           
+  height: 60%;           
   padding-left: 0px;
   margin-top: 150px;
 }
 
 #LogoInicio {
-  width: 310px;
-  height: 75px;         
+  width: 20%;
+  height: 10%;         
 }
