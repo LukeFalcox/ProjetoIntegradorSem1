@@ -79,7 +79,7 @@ section {
 
 header {
   width: 100%;
-  padding: 28px 8%;
+  padding: 20px 8%;
   position: sticky;
   top: 0;
   background-color: var(--color-primary-1);
@@ -537,3 +537,16 @@ footer {
   unicode-bidi: isolate;
 }
 
+#LogoSmartEnergy {
+  display: flex;
+  justify-content: center;
+  align-items: center;   
+  height: 600px;           
+  padding-left: 0px;
+  margin-top: 150px;
+}
+
+#LogoInicio {
+  width: 310px;
+  height: 75px;         
+}
