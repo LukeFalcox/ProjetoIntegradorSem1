@@ -339,16 +339,12 @@ header {
   }
 }
 /*Testimonials*/
-/*Testimonials*/
 #testimonials {
   min-height: calc(100vh - 91px);
   display: flex;
-  flex-direction: column; /* Alterado para alinhar os itens verticalmente */
-  align-items: center; /* Centraliza os itens horizontalmente */
+  align-items: center;
   justify-content: center;
   gap: 48px;
-  padding-top: 48px; /* Adicionado padding no topo para espaçamento */
-  padding-bottom: 48px; /* Adicionado padding na parte inferior */
 }
 
 #testimonial_chef {
@@ -358,26 +354,53 @@ header {
 
 #testimonials .section-subtitle {
   font-size: 3rem;
-  text-align: center; /* Centraliza o subtítulo */
 }
 
 #testimonials_content {
-  width: 100%;
+  width: 80%;
+}
+
+#feedbacks {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centraliza o conteúdo */
+  gap: 20px;
+  margin-bottom: 40px;
+  margin-top: 30px;
+}
+
+.feedback {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 10px;
+  background-color: var(--color-neutral-0);
+  padding: 12px;
+  border-radius: 12px;
+  box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-avatar {
+  width: 50px; /* Defina uma largura fixa */
+  height: 50px; /* Defina uma altura fixa igual à largura para ser um quadrado */
+  border-radius: 50%; /* Aplica o arredondamento circular */
+  object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
+}
+
+.feedback-content p {
+  display: flex;
+  justify-content: space-between;
+}
+
+.feedback-content p span {
+  color: var(--color-primary-6);
 }
 
 #feedbacks {
   display: grid;
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(300px, 1fr)
-  ); /* Layout responsivo com mínimo de 300px por coluna */
+  grid-template-columns: repeat(2, 1fr); /* 2 colunas */
   gap: 20px;
-  max-width: 1000px; /* Aumentei a largura máxima para melhor visualização */
-  margin-top: 30px;
-  margin-bottom: 30px;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .feedback {
@@ -386,82 +409,42 @@ header {
   border-radius: 10px;
   padding: 15px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  display: flex; /* Alinha avatar e conteúdo lado a lado */
-  gap: 15px; /* Espaçamento entre avatar e conteúdo */
-  align-items: center; /* Alinha verticalmente o avatar e o conteúdo */
 }
 
 .feedback-avatar {
-  width: 70px; /* Tamanho fixo para o avatar */
-  height: 70px; /* Tamanho fixo para o avatar (igual à largura para ser circular) */
+  width: 150px;
+  height: 50px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 0; /* Removido margem inferior */
-}
-
-.feedback-content {
-  flex-grow: 1; /* Permite que o conteúdo cresça para ocupar o espaço restante */
+  margin-bottom: 10px;
 }
 
 .feedback-content p {
   margin: 5px 0;
-  display: block; /* Garante que os elementos p se comportem como blocos */
-}
-
-.feedback-content p.EquipeSmartEnergy {
-  display: flex; /* Alinha nome e estrelas */
-  justify-content: space-between;
-  align-items: center;
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-.feedback-content p span {
-  color: var(--color-primary-6);
 }
 
 .fa-star {
   color: gold;
 }
 
-#testimonials > button.btn-default {
-  margin-top: 20px; /* Espaçamento entre os feedbacks e o botão */
-}
-
 @media screen and (max-width: 1170px) {
   #testimonials {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    flex-direction: column;
   }
 
   #testimonials .section-subtitle {
+    text-align: center;
     font-size: 2.5rem;
   }
 
-  #testimonial_chef {
+  #testimonials_chef {
     display: none;
   }
 
   #testimonials_content {
-    width: 95%;
-  }
-
-  #feedbacks {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  }
-
-  .feedback {
-    flex-direction: column; /* Alinha avatar e conteúdo verticalmente em telas menores */
-    align-items: center;
-    text-align: center;
-  }
-
-  .feedback-avatar {
-    margin-bottom: 10px; /* Adiciona margem inferior quando empilhados */
-  }
-
-  .feedback-content p.EquipeSmartEnergy {
-    flex-direction: column; /* Empilha nome e estrelas em telas menores */
+    width: 70%;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     text-align: center;
   }
@@ -478,6 +461,13 @@ header {
     flex-direction: column;
   }
 }
+
+#avaliação {
+  /* Outros estilos do botão */
+  margin: 30px auto 0 auto; /* Adiciona margem superior para espaçamento */
+  display: block; /* Garante que o margin auto funcione */
+}
+
 /*Sobre Nos*/
 #aboutus {
   min-height: calc(100vh - 91px);

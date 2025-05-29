@@ -7,37 +7,37 @@ document.addEventListener("DOMContentLoaded", function () {
   const novosMembros = [
     {
       nome: "Francisco Vinicius",
-      imagem: "", // Adicione o caminho da imagem se tiver
+      imagem: "./assets/img/FVinicius.jpg",
       avaliacao:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima voluptatibus molestiae blanditiis, nemo deleniti aliquid?",
+        "Como back-end minha experiência nesta esmpresa foi impecável, nela aprendi varias coisas que não sabia.",
       estrelas: 5,
     },
     {
       nome: "Vinicius Andrade",
       imagem: "./assets/img/ViniciusA.jpg",
       avaliacao:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima voluptatibus molestiae blanditiis, nemo deleniti aliquid?",
+        "Trabalhar na documentação foi uma experiência enriquecedora, que exigiu atenção aos detalhes, organização e clareza.",
       estrelas: 5,
     },
     {
-      nome: "Sérgio",
-      imagem: "", // Adicione o caminho da imagem se tiver
+      nome: "Sérgio Junior",
+      imagem: "./assets/img/Sergio.jpg",
       avaliacao:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima voluptatibus molestiae blanditiis, nemo deleniti aliquid?",
+        "Atuar como Dev front-end na criação do site SmartEnergy foi uma experiência desafiadora e gratificante.",
       estrelas: 5,
     },
     {
-      nome: "Herick",
+      nome: "Herick Montecino",
       imagem: "./assets/img/Herick.jpg",
       avaliacao:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima voluptatibus molestiae blanditiis, nemo deleniti aliquid?",
+        "Sou muito grato pela experiência que conquistei trabalhando no front-end desenvolvi e me desafie constantemente, empresa incrível.",
       estrelas: 5,
     },
     {
       nome: "João",
-      imagem: "", // Adicione o caminho da imagem se tiver
+      imagem: "./assets/img/João.jpg",
       avaliacao:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima voluptatibus molestiae blanditiis, nemo deleniti aliquid?",
+        "Como desenvolvedor do setor Arduino/IoT foi uma experiência desafiadora, complexa mas ao mesmo tempo gratificante e recompensadora.",
       estrelas: 5,
     },
     {
@@ -55,10 +55,10 @@ document.addEventListener("DOMContentLoaded", function () {
       estrelas: 5,
     },
     {
-      nome: "Kauã",
-      imagem: "./assets/img/Eduardo.jpg", // Você usou a imagem do Eduardo antes, mantive assim
+      nome: "Kauã Henrique",
+      imagem: "./assets/img/Kaka.jpg", // Você usou a imagem do Eduardo antes, mantive assim
       avaliacao:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima voluptatibus molestiae blanditiis, nemo deleniti aliquid?",
+        "Como desenvolvedor back-end minha experiência foi gratificante, aprendi muito sobre códigos e comunicação entre equipe.",
       estrelas: 5,
     },
     {
