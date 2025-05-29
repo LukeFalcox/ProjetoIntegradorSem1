@@ -1,0 +1,32 @@
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.querySelector("form");
+
+  form.addEventListener("submit", function (event) {
+    event.preventDefault(); // Impede o envio padrão do formulário
+
+    const inputs = form.querySelectorAll("input[required]");
+    let allFilled = true;
+
+    inputs.forEach((input) => {
+      if (!input.value.trim()) {
+        allFilled = false;
+        input.style.border = "1px solid red"; // Marca campos vazios
+      } else {
+        input.style.border = ""; // Limpa marcações antigas
+      }
+    });
+
+    // Verifica se algum radio do grupo "gender" está selecionado
+    const genderChecked = form.querySelector('input[name="gender"]:checked');
+
+    if (!genderChecked) {
+      allFilled = false;
+      alert("Por favor, selecione o gênero.");
+    }
+
+    if (allFilled && genderChecked) {
+      alert("Cadastro de usuário realizado");
+      form.reset(); // Limpa o formulário
+    }
+  });
+});
