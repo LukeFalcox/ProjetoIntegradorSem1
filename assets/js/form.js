@@ -25,8 +25,9 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     if (allFilled && genderChecked) {
-      alert("Cadastro de usuário realizado");
+      alert("Ok contato enviado te enviaremos um email siga as instruções");
       form.reset(); // Limpa o formulário
+      window.location.href = "index.html"; // Redireciona para index.html
     }
   });
 });
