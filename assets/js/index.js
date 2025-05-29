@@ -10,14 +10,14 @@ document.addEventListener("DOMContentLoaded", function () {
       imagem: "./assets/img/FVinicius.jpg",
       avaliacao:
         "Como back-end minha experiência nesta esmpresa foi impecável, nela aprendi varias coisas que não sabia.",
-      estrelas: 5,
+      estrelas: 2,
     },
     {
       nome: "Vinicius Andrade",
       imagem: "./assets/img/ViniciusA.jpg",
       avaliacao:
         "Trabalhar na documentação foi uma experiência enriquecedora, que exigiu atenção aos detalhes, organização e clareza.",
-      estrelas: 5,
+      estrelas: 3,
     },
     {
       nome: "Sérgio Junior",
@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
       imagem: "./assets/img/Herick.jpg",
       avaliacao:
         "Sou muito grato pela experiência que conquistei trabalhando no front-end desenvolvi e me desafie constantemente, empresa incrível.",
-      estrelas: 5,
+      estrelas: 4,
     },
     {
       nome: "João",
@@ -45,14 +45,14 @@ document.addEventListener("DOMContentLoaded", function () {
       imagem: "./assets/img/Eduardo.jpg",
       avaliacao:
         "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima voluptatibus molestiae blanditiis, nemo deleniti aliquid?",
-      estrelas: 5,
+      estrelas: 4,
     },
     {
       nome: "Ray",
       imagem: "./assets/img/Ray.jpg",
       avaliacao:
         "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima voluptatibus molestiae blanditiis, nemo deleniti aliquid?",
-      estrelas: 5,
+      estrelas: 4,
     },
     {
       nome: "Kauã Henrique",
@@ -63,10 +63,10 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     {
       nome: "Vinicius Gomes",
-      imagem: "", // Adicione o caminho da imagem do Vinicius Gomes
+      imagem: "./assets/img/ViniciusG.jpg", // Adicione o caminho da imagem do Vinicius Gomes
       avaliacao:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci tempora earum fugiat.",
-      estrelas: 4,
+        "A experiência em trabalhar com circuitos e códigos envolvendo o arduino foi algo que me gerou grandes desafios que se tornaram aprendizados.",
+      estrelas: 3,
     },
   ];
 
