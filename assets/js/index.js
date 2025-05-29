@@ -41,17 +41,17 @@ document.addEventListener("DOMContentLoaded", function () {
       estrelas: 5,
     },
     {
-      nome: "Eduardo",
+      nome: "Eduardo Silva",
       imagem: "./assets/img/Eduardo.jpg",
       avaliacao:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima voluptatibus molestiae blanditiis, nemo deleniti aliquid?",
+        "A experiência com documentação foi positiva e produtiva. Aprimorei habilidades organizacionais e contribuí para a eficiência dos processos.",
       estrelas: 4,
     },
     {
-      nome: "Ray",
+      nome: "Ray de Souza",
       imagem: "./assets/img/Ray.jpg",
       avaliacao:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima voluptatibus molestiae blanditiis, nemo deleniti aliquid?",
+        " Trabalhar na documentação acredito que foi uma ótima experiência, tanto em termos de organização quanto de aprendizado.",
       estrelas: 4,
     },
     {
