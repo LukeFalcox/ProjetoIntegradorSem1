@@ -169,11 +169,11 @@ header {
   display: flex;
   flex-direction: column;
   gap: 28px;
-  margin-top: 5%;
+  margin-top: 5px;
 }
 
 #cta .title {
-  font-size: 4rem;
+  font-size: 60px;
   color: var(--color-neutral-1);
 }
 
@@ -550,3 +550,4 @@ footer {
   width: 20%;
   height: 10%;         
 }
+
