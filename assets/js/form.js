@@ -1,4 +1,15 @@
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", function () {
+  const mobileBtn = document.getElementById("mobile_btn");
+  const mobileMenu = document.getElementById("mobile_menu");
+
+  if (mobileBtn && mobileMenu) {
+    mobileBtn.addEventListener("click", function () {
+      mobileMenu.classList.toggle("active");
+    });
+  }
+});
+
+ocument.addEventListener("DOMContentLoaded", () => {
   const form = document.querySelector("form");
 
   form.addEventListener("submit", function (event) {
