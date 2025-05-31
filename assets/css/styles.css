@@ -6,7 +6,7 @@
   --color-primary-3: #ffeb3b; /* amarelo dourado */
   --color-primary-4: #fdd835; /* amarelo solar */
   --color-primary-5: #fbc02d; /* amarelo mostarda */
-  --color-primary-6: #f57f17; /* amarelo escuro */
+  --color-primary-6: #f57f17; /* amarelo escuro */
 
   --color-neutral-0: #fff;
   --color-neutral-1: #1d1d1d;
@@ -68,7 +68,7 @@ section {
 }
 
 .section-title {
-  margin-top: 100px;
+  margin-top: 90px;
   color: var(--color-primary-6);
   font-size: 1.563rem;
 }
@@ -109,9 +109,15 @@ header {
   text-decoration: none;
   color: #1d1d1dad;
   font-weight: 600;
+  transition: color 0.3s ease, border-bottom 0.3s ease; /* Adiciona transição suave */
 }
 
 .nav-item.active a {
+  color: var(--color-neutral-1);
+  border-bottom: 3px solid var(--color-primary-3);
+}
+
+#nav_list .nav-item a:hover {
   color: var(--color-neutral-1);
   border-bottom: 3px solid var(--color-primary-3);
 }
@@ -153,6 +159,25 @@ header {
   #mobile_nav_list .nav-item {
     list-style: none;
     text-align: center;
+  }
+
+  #mobile_nav_list .nav-item a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #1d1d1dad;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Adiciona transição */
+  }
+
+  #mobile_nav_list .nav-item a:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Feedback visual ao tocar */
+    color: var(--color-neutral-1);
+  }
+
+  #mobile_nav_list .nav-item.active a {
+    color: var(--color-neutral-1);
+    /* Não adiciona border-bottom no mobile para evitar layout estranho ao tocar */
   }
 }
 
@@ -526,12 +551,12 @@ footer {
   }
 }
 
-.ImagemSensor {
-  max-width: 180px;
-  height: 180px;
+.imagem-produtos {
+  width: 200px;
+  height: 200px;
 }
 
-.EquipeSmartEnergy {
+.equipe-smart {
   display: block;
   font-size: 1.17em;
   margin-block-start: 1em;
@@ -556,9 +581,9 @@ footer {
   height: 10%;
 }
 
-.FuncaoEquipe {
+.funcao-equipe {
   font-size: 18px;
-  color:#fbc02d;
-  font-family: 'Courier New', Courier, monospace;
+  color: #fbc02d;
+  font-family: "Courier New", Courier, monospace;
   text-decoration: underline;
 }

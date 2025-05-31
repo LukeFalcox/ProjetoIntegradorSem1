@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
       avaliacao:
         "Como back-end minha experiência nesta esmpresa foi impecável, nela aprendi varias coisas que não sabia.",
       estrelas: 2,
-      
+      cargo: "Dev Back-End",
     },
     {
       nome: "Vinicius Andrade",
@@ -19,6 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
       avaliacao:
         "Trabalhar na documentação foi uma experiência enriquecedora, que exigiu atenção aos detalhes, organização e clareza.",
       estrelas: 3,
+      cargo: "Document",
     },
     {
       nome: "Sérgio Junior",
@@ -26,6 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
       avaliacao:
         "Atuar como Dev front-end na criação do site SmartEnergy foi uma experiência desafiadora e gratificante.",
       estrelas: 5,
+      cargo: "Dev Front-End",
     },
     {
       nome: "Herick Montecino",
@@ -33,13 +35,15 @@ document.addEventListener("DOMContentLoaded", function () {
       avaliacao:
         "Sou muito grato pela experiência que conquistei trabalhando no front-end desenvolvi e me desafie constantemente, empresa incrível.",
       estrelas: 4,
+      cargo: "Dev Front-End",
     },
     {
-      nome: "João",
+      nome: "João Pedro",
       imagem: "./assets/img/João.jpg",
       avaliacao:
         "Como desenvolvedor do setor Arduino/IoT foi uma experiência desafiadora, complexa mas ao mesmo tempo gratificante e recompensadora.",
       estrelas: 5,
+      cargo: "IOT",
     },
     {
       nome: "Eduardo Silva",
@@ -47,6 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
       avaliacao:
         "A experiência com documentação foi positiva e produtiva. Aprimorei habilidades organizacionais e contribuí para a eficiência dos processos.",
       estrelas: 4,
+      cargo: "Document",
     },
     {
       nome: "Ray de Souza",
@@ -54,13 +59,15 @@ document.addEventListener("DOMContentLoaded", function () {
       avaliacao:
         " Trabalhar na documentação acredito que foi uma ótima experiência, tanto em termos de organização quanto de aprendizado.",
       estrelas: 4,
+      cargo: "Document",
     },
     {
       nome: "Kauã Henrique",
       imagem: "./assets/img/Kaka.jpg", // Você usou a imagem do Eduardo antes, mantive assim
       avaliacao:
         "Como desenvolvedor back-end minha experiência foi gratificante, aprendi muito sobre códigos e comunicação entre equipe.",
-      estrelas: 5,
+      estrelas: 1,
+      cargo: "Dev Back-End",
     },
     {
       nome: "Vinicius Gomes",
@@ -68,6 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
       avaliacao:
         "A experiência em trabalhar com circuitos e códigos envolvendo o arduino foi algo que me gerou grandes desafios que se tornaram aprendizados.",
       estrelas: 3,
+      cargo: "IOT",
     },
   ];
 
@@ -93,8 +101,12 @@ document.addEventListener("DOMContentLoaded", function () {
       feedbackContentDiv.classList.add("feedback-content");
 
       const nomeEquipeP = document.createElement("p");
-      nomeEquipeP.classList.add("EquipeSmartEnergy");
+      nomeEquipeP.classList.add("equipe-smart");
       nomeEquipeP.textContent = membro.nome;
+
+      const cargoEquipe = document.createElement("p");
+      cargoEquipe.classList.add("funcao-equipe");
+      cargoEquipe.textContent = membro.cargo;
 
       const estrelasSpan = document.createElement("span");
       for (let j = 0; j < membro.estrelas; j++) {
@@ -107,11 +119,14 @@ document.addEventListener("DOMContentLoaded", function () {
       const avaliacaoP = document.createElement("p");
       avaliacaoP.textContent = membro.avaliacao;
 
+      feedbackContentDiv.appendChild(cargoEquipe);
       feedbackContentDiv.appendChild(nomeEquipeP);
       feedbackContentDiv.appendChild(avaliacaoP);
 
       feedbackDiv.appendChild(avatarImg);
       feedbackDiv.appendChild(feedbackContentDiv);
+
+      cargoEquipe;
 
       feedbacksContainer.appendChild(feedbackDiv);
       membrosAdicionados++;
