@@ -68,6 +68,7 @@ section {
 }
 
 .section-title {
+  margin-top: 100px;
   color: var(--color-primary-6);
   font-size: 1.563rem;
 }

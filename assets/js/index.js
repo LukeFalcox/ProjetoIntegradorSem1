@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
       avaliacao:
         "Como back-end minha experiência nesta esmpresa foi impecável, nela aprendi varias coisas que não sabia.",
       estrelas: 2,
+      
     },
     {
       nome: "Vinicius Andrade",
